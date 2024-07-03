@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="15dp"
+    android:backgroundTint="@color/white"
+    android:orientation="horizontal"
+    android:layout_marginBottom="5dp">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/playlistImg"
+        android:layout_width="60dp"
+        android:layout_height="55dp"
+        android:layout_gravity="center_vertical"
+        android:src="@drawable/music"
+        app:shapeAppearanceOverlay="@style/curved"
+        android:layout_marginStart="5dp"
+        android:layout_marginVertical="5dp"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginStart="70dp"
+        android:layout_gravity="center_vertical"
+        android:layout_toStartOf="@id/songDuration"
+        android:layout_toEndOf="@id/imageMV">
+
+        <TextView
+            android:id="@+id/playlistName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:singleLine="true"
+            android:text="@string/playlist_name"
+            android:textStyle="bold"
+            android:layout_marginStart="5dp"
+            android:textSize="15sp"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/totalPlaylistSongs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toStartOf="@id/songDuration"
+            android:layout_toEndOf="@id/imageMV"
+            android:layout_gravity="center_vertical"
+            android:singleLine="true"
+            android:layout_marginStart="5dp"
+            android:text="@string/playlist_name"
+            android:textColor="@color/black" />
+
+    </LinearLayout>
+
+
+
+
+    <!--<ImageButton
+        android:id="@+id/playlistDeleteBtn"
+        android:layout_width="35dp"
+        android:layout_height="match_parent"
+        android:src="@drawable/delete_icon"
+        app:tint="@color/black"
+        android:layout_alignParentEnd="true"
+        android:gravity="center"
+        android:layout_gravity="end"
+        android:layout_marginHorizontal="5dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/playlist_delete" />-->
+
+</com.google.android.material.card.MaterialCardView>
+

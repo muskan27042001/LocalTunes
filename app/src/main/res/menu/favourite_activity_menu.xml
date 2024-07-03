@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/shuffleFavouriteSongs"
+        android:icon="@drawable/shuffle_icon"
+        android:title="Shuffle Songs"/>
+</menu>

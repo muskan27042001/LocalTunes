@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/addSongs"
+        android:icon="@drawable/add_icon"
+        app:showAsAction="always"
+        android:title="Add Songs"/>
+    <item
+        android:id="@+id/editPlaylistInfo"
+        app:showAsAction="always"
+        android:icon="@drawable/baseline_mode_edit_24"
+        android:title="Edit playlist info"/>
+    <item
+        android:id="@+id/deletePlaylist"
+        android:icon="@drawable/remove_icon"
+        app:showAsAction="always"
+        android:title="Delete playlist"/>
+    <item
+        android:id="@+id/shufflePlaylist"
+        android:icon="@drawable/shuffle_icon"
+        app:showAsAction="always"
+        android:title="Shuffle playlist"/>
+</menu>
